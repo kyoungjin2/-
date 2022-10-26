@@ -1,0 +1,23 @@
+//숫자맞추기게임.
+
+import random
+
+print("0~100까지의 숫자를 입력하세요.")
+number =random.randint(0,100)
+count = 0
+
+while True:
+    
+    count += 1
+    print(f"{count}번째 도전:")
+    
+    
+    user = int(input("당신의 선택은:?"))
+    if user > number:
+        print("정답보다큽니다")
+    elif user < number:
+        print("정답보다 작네요")
+        
+    else:
+        print("정답입니다")
+        break
